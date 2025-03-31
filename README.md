@@ -46,6 +46,10 @@ python3 -m scripts.finetune_mae
 
 ```
 
+## Model Weights
+
+Trained weights for MAE and finetuned classifier are present in saved_models folder
+
 ## Acknowledgment
 
 I would like to thank my mentors, Pranath Reddy, Dr. Michael Toomey and Prof. Sergei Gleyzer, for their continued support and guidance.
