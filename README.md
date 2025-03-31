@@ -19,6 +19,8 @@ Based on the findings, we will then extend our investigation to incorporate doma
 
 ## Results
 
+Before training, Download the dataset from [repository](https://github.com/mwt5345/DeepLenseSim/tree/main/) and keep it in data folder. 
+
 As first experiment, I have trained MAE on Model 2 dataset with 50k samples and finetuned classification layer for Model 3 dataset and test accuracy is shown in table below. I will further train other self supervised techniques. Finally, I want to build foundation model based on gravitaion lensing physics equations. 
 
 | Method   | Pretraining Dataset | Fine-tuning Dataset | Accuracy (%) |
