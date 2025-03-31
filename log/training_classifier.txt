@@ -1,0 +1,257 @@
+----------------------------------Classifer training using VIT started ----------------------------------------
+Configuration:
+data:
+  batch_size: 64
+  folder: ../IJEPA/data/Model_III/
+  shuffle: false
+  train_split:
+    _e_sign: null
+    _e_width: null
+    _exp: null
+    _m_lead0: 1
+    _m_sign: false
+    _prec: 1
+    _underscore: null
+    _width: 3
+  val_split:
+    _e_sign: null
+    _e_width: null
+    _exp: null
+    _m_lead0: 1
+    _m_sign: false
+    _prec: 1
+    _underscore: null
+    _width: 3
+dec:
+  depth: 2
+  emb_dim: 184
+  mlp_ratio: 4
+  num_head: 8
+device: cuda:1
+enc:
+  depth: 6
+  emb_dim: 192
+  img_size: 64
+  in_chs: 1
+  mask_ratio:
+    _e_sign: null
+    _e_width: null
+    _exp: null
+    _m_lead0: 2
+    _m_sign: false
+    _prec: 1
+    _underscore: null
+    _width: 3
+  num_head: 8
+  patch_size: 16
+seed: 42
+train:
+  epochs: 50
+verbose: true
+
+Total Trainable Parameters: 2,719,299
+Epoch 1/50, Loss: 1.1679, Train Acc: 0.3288
+Validation Loss: 1.1115, Validation Acc: 0.3363
+🚀 New Best Model Found! 🚀
+Epoch 1: Validation Acc Improved by 0.3363
+🔥 Best Model Saved with Validation Acc: 0.3363 🔥
+Epoch 2/50, Loss: 1.1084, Train Acc: 0.3357
+Validation Loss: 1.1367, Validation Acc: 0.3243
+Epoch 3/50, Loss: 1.1090, Train Acc: 0.3250
+Validation Loss: 1.1008, Validation Acc: 0.3363
+Epoch 4/50, Loss: 1.1108, Train Acc: 0.3248
+Validation Loss: 1.1038, Validation Acc: 0.3393
+🚀 New Best Model Found! 🚀
+Epoch 4: Validation Acc Improved by 0.0030
+🔥 Best Model Saved with Validation Acc: 0.3393 🔥
+Epoch 5/50, Loss: 1.1071, Train Acc: 0.3377
+Validation Loss: 1.1121, Validation Acc: 0.3393
+Epoch 6/50, Loss: 1.0979, Train Acc: 0.3648
+Validation Loss: 1.0879, Validation Acc: 0.3674
+🚀 New Best Model Found! 🚀
+Epoch 6: Validation Acc Improved by 0.0280
+🔥 Best Model Saved with Validation Acc: 0.3674 🔥
+Epoch 7/50, Loss: 1.0792, Train Acc: 0.3974
+Validation Loss: 1.1017, Validation Acc: 0.3624
+Epoch 8/50, Loss: 1.0717, Train Acc: 0.4122
+Validation Loss: 1.0293, Validation Acc: 0.4775
+🚀 New Best Model Found! 🚀
+Epoch 8: Validation Acc Improved by 0.1101
+🔥 Best Model Saved with Validation Acc: 0.4775 🔥
+Epoch 9/50, Loss: 1.0077, Train Acc: 0.4724
+Validation Loss: 0.9360, Validation Acc: 0.5035
+🚀 New Best Model Found! 🚀
+Epoch 9: Validation Acc Improved by 0.0260
+🔥 Best Model Saved with Validation Acc: 0.5035 🔥
+Epoch 10/50, Loss: 0.9224, Train Acc: 0.5404
+Validation Loss: 0.8492, Validation Acc: 0.6256
+🚀 New Best Model Found! 🚀
+Epoch 10: Validation Acc Improved by 0.1221
+🔥 Best Model Saved with Validation Acc: 0.6256 🔥
+Epoch 11/50, Loss: 0.8071, Train Acc: 0.6093
+Validation Loss: 0.7449, Validation Acc: 0.6587
+🚀 New Best Model Found! 🚀
+Epoch 11: Validation Acc Improved by 0.0330
+🔥 Best Model Saved with Validation Acc: 0.6587 🔥
+Epoch 12/50, Loss: 0.7395, Train Acc: 0.6560
+Validation Loss: 0.6329, Validation Acc: 0.7157
+🚀 New Best Model Found! 🚀
+Epoch 12: Validation Acc Improved by 0.0571
+🔥 Best Model Saved with Validation Acc: 0.7157 🔥
+Epoch 13/50, Loss: 0.7020, Train Acc: 0.6766
+Validation Loss: 0.7872, Validation Acc: 0.6066
+Epoch 14/50, Loss: 0.6557, Train Acc: 0.7062
+Validation Loss: 0.5705, Validation Acc: 0.7487
+🚀 New Best Model Found! 🚀
+Epoch 14: Validation Acc Improved by 0.0330
+🔥 Best Model Saved with Validation Acc: 0.7487 🔥
+Epoch 15/50, Loss: 0.6002, Train Acc: 0.7380
+Validation Loss: 0.6670, Validation Acc: 0.6967
+Epoch 16/50, Loss: 0.7488, Train Acc: 0.6495
+Validation Loss: 0.6282, Validation Acc: 0.7107
+Epoch 17/50, Loss: 0.6693, Train Acc: 0.6977
+Validation Loss: 0.6657, Validation Acc: 0.6997
+Epoch 18/50, Loss: 0.6265, Train Acc: 0.7190
+Validation Loss: 0.6009, Validation Acc: 0.7377
+Epoch 19/50, Loss: 0.5885, Train Acc: 0.7438
+Validation Loss: 0.5772, Validation Acc: 0.7548
+🚀 New Best Model Found! 🚀
+Epoch 19: Validation Acc Improved by 0.0060
+🔥 Best Model Saved with Validation Acc: 0.7548 🔥
+Epoch 20/50, Loss: 0.6459, Train Acc: 0.7208
+Validation Loss: 0.5418, Validation Acc: 0.7678
+🚀 New Best Model Found! 🚀
+Epoch 20: Validation Acc Improved by 0.0130
+🔥 Best Model Saved with Validation Acc: 0.7678 🔥
+Epoch 21/50, Loss: 0.6344, Train Acc: 0.7180
+Validation Loss: 0.5356, Validation Acc: 0.7688
+🚀 New Best Model Found! 🚀
+Epoch 21: Validation Acc Improved by 0.0010
+🔥 Best Model Saved with Validation Acc: 0.7688 🔥
+Epoch 22/50, Loss: 0.5959, Train Acc: 0.7365
+Validation Loss: 0.7780, Validation Acc: 0.6547
+Epoch 23/50, Loss: 0.5821, Train Acc: 0.7523
+Validation Loss: 0.5900, Validation Acc: 0.7457
+Epoch 24/50, Loss: 0.5277, Train Acc: 0.7781
+Validation Loss: 0.5281, Validation Acc: 0.7668
+Epoch 25/50, Loss: 0.5629, Train Acc: 0.7585
+Validation Loss: 0.5303, Validation Acc: 0.7658
+Epoch 26/50, Loss: 0.5514, Train Acc: 0.7652
+Validation Loss: 0.5187, Validation Acc: 0.7658
+Epoch 27/50, Loss: 0.5384, Train Acc: 0.7740
+Validation Loss: 0.5301, Validation Acc: 0.7688
+Epoch 28/50, Loss: 0.4959, Train Acc: 0.7971
+Validation Loss: 0.4720, Validation Acc: 0.7928
+🚀 New Best Model Found! 🚀
+Epoch 28: Validation Acc Improved by 0.0240
+🔥 Best Model Saved with Validation Acc: 0.7928 🔥
+Epoch 29/50, Loss: 0.4955, Train Acc: 0.7938
+Validation Loss: 0.5007, Validation Acc: 0.7888
+Epoch 30/50, Loss: 0.4759, Train Acc: 0.8016
+Validation Loss: 0.4055, Validation Acc: 0.8368
+🚀 New Best Model Found! 🚀
+Epoch 30: Validation Acc Improved by 0.0440
+🔥 Best Model Saved with Validation Acc: 0.8368 🔥
+Epoch 31/50, Loss: 0.4856, Train Acc: 0.8036
+Validation Loss: 0.5308, Validation Acc: 0.7658
+Epoch 32/50, Loss: 0.4887, Train Acc: 0.7952
+Validation Loss: 0.5524, Validation Acc: 0.7768
+Epoch 33/50, Loss: 0.4819, Train Acc: 0.8056
+Validation Loss: 0.4073, Validation Acc: 0.8328
+Epoch 34/50, Loss: 0.4629, Train Acc: 0.8076
+Validation Loss: 0.4273, Validation Acc: 0.8238
+Epoch 35/50, Loss: 0.4325, Train Acc: 0.8257
+Validation Loss: 0.4943, Validation Acc: 0.7848
+Epoch 36/50, Loss: 0.4340, Train Acc: 0.8207
+Validation Loss: 0.5237, Validation Acc: 0.7638
+Epoch 37/50, Loss: 0.4617, Train Acc: 0.8140
+Validation Loss: 0.4453, Validation Acc: 0.8108
+Epoch 38/50, Loss: 0.4386, Train Acc: 0.8205
+Validation Loss: 0.4533, Validation Acc: 0.8128
+Epoch 39/50, Loss: 0.4455, Train Acc: 0.8187
+Validation Loss: 0.4290, Validation Acc: 0.7978
+Epoch 40/50, Loss: 0.4298, Train Acc: 0.8255
+Validation Loss: 0.4849, Validation Acc: 0.7988
+Epoch 41/50, Loss: 0.4589, Train Acc: 0.8120
+Validation Loss: 0.4514, Validation Acc: 0.8078
+Epoch 42/50, Loss: 0.4516, Train Acc: 0.8190
+Validation Loss: 0.4421, Validation Acc: 0.8188
+Epoch 43/50, Loss: 0.4923, Train Acc: 0.7962
+Validation Loss: 0.5038, Validation Acc: 0.7798
+Epoch 44/50, Loss: 0.4546, Train Acc: 0.8107
+Validation Loss: 0.4171, Validation Acc: 0.8148
+Epoch 45/50, Loss: 0.4338, Train Acc: 0.8242
+Validation Loss: 0.4177, Validation Acc: 0.8298
+Epoch 46/50, Loss: 0.4445, Train Acc: 0.8187
+Validation Loss: 0.4058, Validation Acc: 0.8428
+🚀 New Best Model Found! 🚀
+Epoch 46: Validation Acc Improved by 0.0060
+🔥 Best Model Saved with Validation Acc: 0.8428 🔥
+Epoch 47/50, Loss: 0.4462, Train Acc: 0.8176
+Validation Loss: 0.4429, Validation Acc: 0.8178
+Epoch 48/50, Loss: 0.4394, Train Acc: 0.8187
+Validation Loss: 0.4507, Validation Acc: 0.8108
+Epoch 49/50, Loss: 0.4433, Train Acc: 0.8167
+Validation Loss: 0.4025, Validation Acc: 0.8368
+Epoch 50/50, Loss: 0.4122, Train Acc: 0.8352
+Validation Loss: 0.5515, Validation Acc: 0.7898
+Best model test Loss: 0.4243, Best model test Acc: 0.8342
+---------------------------Claasification training completed. Model saved.----------------------------------------------------
+
+----------------------------------Classifer training using VIT started ----------------------------------------
+Configuration:
+data:
+  batch_size: 64
+  folder: ../IJEPA/data/Model_III/
+  shuffle: false
+  train_split:
+    _e_sign: null
+    _e_width: null
+    _exp: null
+    _m_lead0: 1
+    _m_sign: false
+    _prec: 1
+    _underscore: null
+    _width: 3
+  val_split:
+    _e_sign: null
+    _e_width: null
+    _exp: null
+    _m_lead0: 1
+    _m_sign: false
+    _prec: 1
+    _underscore: null
+    _width: 3
+dec:
+  depth: 2
+  emb_dim: 184
+  mlp_ratio: 4
+  num_head: 8
+device: cuda:1
+enc:
+  depth: 6
+  emb_dim: 192
+  img_size: 64
+  in_chs: 1
+  mask_ratio:
+    _e_sign: null
+    _e_width: null
+    _exp: null
+    _m_lead0: 2
+    _m_sign: false
+    _prec: 1
+    _underscore: null
+    _width: 3
+  num_head: 8
+  patch_size: 16
+seed: 42
+train:
+  epochs: 50
+verbose: true
+
+Total Trainable Parameters: 2,719,299
+Epoch 1/50, Loss: 1.1679, Train Acc: 0.3288
+Validation Loss: 1.1115, Validation Acc: 0.3363
+🚀 New Best Model Found! 🚀
+Epoch 1: Validation Acc Improved by 0.3363
+🔥 Best Model Saved with Validation Acc: 0.3363 🔥

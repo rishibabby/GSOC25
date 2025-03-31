@@ -1,0 +1,30 @@
+default : &DEFAULT
+
+  verbose: True
+  device: "cuda:1"
+  seed: 42
+
+  data:
+    folder: "../IJEPA/data/Model_III/"
+    train_split: 0.8
+    val_split: 0.1
+    batch_size: 64
+    shuffle: False
+
+  enc:
+    img_size: 64
+    patch_size: 16
+    in_chs: 1
+    emb_dim: 192
+    depth: 6
+    num_head: 8
+    mask_ratio: 0.0
+
+  dec:
+    emb_dim: 184
+    depth: 2
+    num_head: 8
+    mlp_ratio: 4
+    
+  train:
+    epochs: 50
